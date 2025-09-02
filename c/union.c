@@ -5,12 +5,18 @@ int main(){
     scanf("%d",&n);
     printf("Enter the size of array :");
     scanf("%d",&m);
-    int arr[n];brr[m];
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            
+    int i,j,k=0;
+    int arr[n],brr[m],uni[m+n];
+    for(i=0;i<n;i++){
+        uni[k++]=arr[i];
+    }
+    for(i=0;i<n;i++){
+        int found=0;
+        for(j=0;j<m;j++){
+            if(brr[])
         }
     }
+    
 
     return 0;
 }
