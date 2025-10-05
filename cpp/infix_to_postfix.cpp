@@ -55,8 +55,7 @@ int main(){
         while(top!=-1){
             cout << pop();
         }
-        cout<<endl;
-    
+        cout<<endl;  
 return 0;
     }
 
