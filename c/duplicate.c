@@ -23,7 +23,7 @@ int main()
     printf("max=%d\n",max);
     int brr[max+1];
 
-    // initilaisng hte value of all elements of brr as 0 
+    // initilaisng the value of all elements of brr as 0 
     for(int i=0;i<=max;i++){
         brr[i]=0;
     }
@@ -39,7 +39,6 @@ int main()
         {
         printf("%d occured %d times\n",i,brr[i]);
         }
-        
     }
     return 0;
 }

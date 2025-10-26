@@ -28,12 +28,12 @@ struct node*InsEnd(struct node* start,int y){
         start=p;}
     else{
         struct node* temp=start;
-        while(p->next!=NULL){
+        while(temp->next!=NULL){
             temp=temp->next;
         }
         temp->next=p;
-        // p->next=NULL;
     }
+    return start;
 }
 struct node* InsAfter( struct node* start,int key,int y){
     struct node* temp=start;
@@ -47,7 +47,7 @@ struct node* InsAfter( struct node* start,int key,int y){
     struct node * p=getNode();
     p->data=y;
     p->next=temp->next;
-    p->next=p;
+    temp->next=p;
     return start;
 }
 int count_nodes(struct node* start){
@@ -69,15 +69,19 @@ int search(struct node* start , int value){
     }
     return 0;
 }
+void display(struct node* start){
+    struct node*temp=start;
+    
+}
 int main()
 {   
     int p,choice,key;
-    cin>>choice;
     cout<<"1. insert from beginning "<<endl;
     cout<<"2. insert after a node"<<endl;
     cout<<"3. insert at end"<<endl;
     cout<<"4. count nodes"<<endl;
     cout<<"5. search for a value"<<endl;
+    cin>>choice;
     switch(choice){
         case 1: 
             cout<<"enter the data"<<endl;
