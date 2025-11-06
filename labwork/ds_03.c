@@ -74,7 +74,6 @@ void display(struct node* start) {
         temp = temp->next;
     }
 }
-
 int main() {
     int p, choice, key, x;
     do {
