@@ -27,9 +27,9 @@ int count_sort(int arr[],int n){
 }
 int main(){
     int n,arr[100];
-    printf("Enter the size of array :");
+    printf("Enter the size of array : ");
     scanf("%d",&n);
-    printf("Enter the elements of array :");
+    printf("Enter the elements of array : ");
     for(int i=0;i<n;i++){
     scanf("%d",&arr[i]);
     }
