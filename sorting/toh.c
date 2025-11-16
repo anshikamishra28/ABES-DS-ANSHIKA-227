@@ -7,8 +7,7 @@ void TOH(int n,char A, char B, char C){
     }
     TOH(n-1,A,C,B);
     printf("Move disk %d from %c to %c\n",n,A,C);
-    TOH(n-1,B,A,C);
-    
+    TOH(n-1,B,A,C); 
 }
 int main(){
     printf("Enter the number of disks : ");
